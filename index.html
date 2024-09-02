@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+
+
+    <!-- DaisyUI and Tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+            <!-- Font Styles -->
+    <style>
+    .font-manrope {
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+      }
+      /* Black-Circle */
+      .black-circle {
+            position: relative;
+            width: 24px;
+            height: 24px;
+            background-color: black;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Lime-Circle */
+        .lime-circle {
+            position: relative;
+            width: 24px;
+            height: 24px;
+            background-color: #ABEF5F;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Rotated Arrow */
+        .rotated-arrow {
+            transform: rotate(-45deg);
+            color: white;
+            font-size: 14px;
+        }
+
+    </style>
+
+</headm jh>
+<body class="font-manrope">
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16">
+        <!-- Header Section -->
+    <header class="bg-gradient-to-b from-[white]">
+        <!-- Navbar -->
+        <nav>
+            <div class="navbar">
+                <div class="navbar-start">
+                  <a class="btn btn-ghost text-xl font-extrabold"> <span class="lime-circle ">
+                    <i class="fa-solid fa-arrow-right rotated-arrow text-black"></i>
+                  </span> Rinterio</a>
+                </div>
+                <div class="navbar-center ">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="font-extrabold lg:flex hidden"><a>Home</a></li>
+                      <li class="lg:flex hidden"><a>Services</a></li>
+                      <li class="lg:flex hidden"><a>Portfolio</a></li>
+                      <li class="lg:flex hidden"><a>Blogs</a></li>
+                      <li class="lg:flex hidden"><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-2 hidden sm:flex">
+                    <!-- Search Button -->
+                    <div class="border rounded-full">
+                        <button class="btn btn-ghost btn-circle">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-5 w-5"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor">
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                          </button>
+                    </div>
+                      <!-- Cart Button -->
+                      <div class="flex-none ">
+                        <div class="dropdown dropdown-end border rounded-full">
+                          <div tabindex="0" role="button" class="btn btn-ghost btn-circle ">
+                            <div class="indicator">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                              </svg>
+                              <!-- <span class="badge badge-sm indicator-item">0</span> -->
+                            </div>
+                          </div>
+                          <div
+                            tabindex="0"
+                            class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                            <div class="card-body">
+                              <span class="text-lg font-bold">No item acquired</span>
+                              <span class="text-info">Subtotal: $0.00</span>
+                              <div class="card-actions">
+                                <button class="btn btn-primary btn-block">View cart</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Book Consult -->
+                        <a class="btn rounded-s-full rounded-e-full btn-md bg-[#ABEF5F] text-xl">
+                            Book Consult
+                            <span class="black-circle">
+                                <i class="fa-sharp fa-solid fa-arrow-right rotated-arrow"></i>
+                            </span>
+                        </a>
+                </div>
+              </div>
+              <div class="dropdown sm:navbar-end sm:flex sm:justify-between md:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                  <li><a>Search</a></li>
+                        <li><a>Cart</a></li>
+                        <li><a>Book Consult</a></li>
+                </ul>
+              </div>
+        </nav>
+
+            <!-- Banner Section -->
+            <section class="text-center space-y-5 px-4 md:px-8 lg:px-12">
+                <!-- Image Content -->
+                <div class="max-w-full mx-auto">
+                    <img src="assets/banner.png" alt="" class="w-full max-w-lg mx-auto">
+                </div>
+                <!-- Text Content -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold">
+                    A barn house of this design has a
+                    striking appearance
+                </h1>
+                <p class="text-[#494949] text-sm md:text-base font-medium">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <!-- View Details Button -->
+                <a class="btn rounded-s-full rounded-e-full btn-md bg-[#c6fd8888] text-lg">
+                    View Details
+                    <span class="lime-circle">
+                        <i class="fa-sharp fa-solid fa-arrow-right rotated-arrow text-black"></i>
+                    </span>
+                </a>
+            </section>
+
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        
+    </main>
+
+
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="max-w-full">
+
+    </footer>
+
+</body>
+</html>
