@@ -19,6 +19,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
             <!-- Font Styles -->
     <style>
     .font-manrope {
@@ -55,13 +66,14 @@
             font-size: 14px;
         }
 
+
     </style>
 
-</headm jh>
+</head>
 <body class="font-manrope">
     <main class="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16">
         <!-- Header Section -->
-    <header class="bg-gradient-to-b from-[white]">
+    <header class="bg-gradient-to-b from-slate-50">
         <!-- Navbar -->
         <nav>
             <div class="navbar">
@@ -82,7 +94,7 @@
                 <div class="navbar-end gap-2 hidden sm:flex">
                     <!-- Search Button -->
                     <div class="border rounded-full">
-                        <button class="btn btn-ghost btn-circle">
+                        <button class="btn btn-ghost btn-circle ">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               class="h-5 w-5"
@@ -138,7 +150,9 @@
                         </a>
                 </div>
               </div>
-              <div class="dropdown sm:navbar-end sm:flex sm:justify-between md:hidden">
+
+              <!-- dropdown for medium and small devices -->
+              <div class="dropdown navbar-end flex sm:hidden lg:navbar-end md:hidden">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -156,20 +170,23 @@
                 <ul
                   tabindex="0"
                   class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Home</a></li>
-                  <li><a>Services</a></li>
-                  <li><a>Portfolio</a></li>
-                  <li><a>Blogs</a></li>
-                  <li><a>Contact Us</a></li>
-                  <li><a>Search</a></li>
-                        <li><a>Cart</a></li>
-                        <li><a>Book Consult</a></li>
+                  <!-- For Medium Devices -->
+             <li class="md:hidden lg:hidden"><a>Home</a></li>
+            <li class="md:hidden lg:hidden"><a>Services</a></li>
+            <li class="md:hidden lg:hidden"><a>Portfolio</a></li>
+            <li class="md:hidden lg:hidden"><a>Blogs</a></li>
+            <li class="md:hidden lg:hidden"><a>Contact Us</a></li>
+                  <!-- Added Items in Small Devices -->
+                  <li class="sm:hidden"><a>Search</a></li>
+                        <li class="sm:hidden"><a>Cart</a></li>
+                        <li class="sm:hidden"><a>Book Consult</a></li>
                 </ul>
               </div>
         </nav>
 
             <!-- Banner Section -->
-            <section class="text-center space-y-5 px-4 md:px-8 lg:px-12">
+            <section class="text-center space-y-5 px-4 md:px-8 lg:px-12 my-10">
+                
                 <!-- Image Content -->
                 <div class="max-w-full mx-auto">
                     <img src="assets/banner.png" alt="" class="w-full max-w-lg mx-auto">
@@ -190,13 +207,56 @@
                     </span>
                 </a>
             </section>
-
     </header>
 
     <!-- Main Section -->
-    <main>
+            <main class="secondary-bg">
+                <!-- about section -->
+                <div class="card lg:card-side bg-base-100 shadow-xl bg-slate-50">
+                    
+                    <div class="card-body">
+                        <img class="w-24 transform -ml-10" src="assets/Vector.png" alt="">
+                        <h4 class="border rounded-full py-2 px-5 max-w-36 text-base font-semibold"> <i class="fa-solid fa-arrow-right"></i> About Us</h4>
+                        <h1 class="text-4xl font-black">We design thoughtful,
+                            <br>
+                            liveable spaces</h1>
+                            <p>We create spaces that blend beauty and functionality, ensuring each
+                                <br>
+                                area feels welcoming and thoughtfully designed for everyday living.</p>
+                                <!-- Commercial Card -->
+                            <div class="card card-side bg-base-100 w-full shadow-xl">
+                                <figure class=" ml-3">
+                                    <img
+                                      src="assets/commercial.png"
+                                      alt="Shoes" />
+                                  </figure>
+                                <div class="card-body">
+                                  <h2 class="card-title font-bold">Commercial</h2>
+                                  <p>We create commercial spaces that blend innovation with functionality.</p>
+                                </div>
+                              </div>
+                              <!-- Residential Card -->
+                              <div class="card card-side bg-base-100 w-full shadow-xl max-w-[100%]">
+                                <figure class=" ml-3 ">
+                                    <img
+                                      src="assets/residential.png"
+                                      alt="Shoes" />
+                                  </figure>
+                                <div class="card-body">
+                                  <h2 class="card-title font-bold">Residential</h2>
+                                  <p>We design residential spaces that combine style and comfort.</p>
+                                </div>
+                              </div>
+                    </div>
+                                        <!-- Image Content -->
+                    <figure class="px-5">
+                        <img
+                          src="assets/Rectangle.png"
+                          alt="Album" />
+                      </figure>
+                  </div>
         
-    </main>
+            </main>
 
 
     </main>
