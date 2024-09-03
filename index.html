@@ -91,7 +91,7 @@
                       <li class="lg:flex hidden "><a>Contact Us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end gap-2 hidden sm:flex overflow-clip">
+                <div class="navbar-end gap-2 hidden sm:flex lg:overflow-hidden">
                     <!-- Search Button -->
                     <div class="border rounded-full">
                         <button class="btn btn-ghost btn-circle ">
@@ -215,7 +215,7 @@
                 <div class="card lg:card-side  shadow-xl lg:-space-x-10"> 
                     <!-- text content -->
                     <div class="card-body">
-                        <img class="w-24 transform -ml-10" src="assets/Vector.png" alt="">
+                        <img class="w-24 transform -ml-8" src="assets/Vector.png" alt="">
                         <h4 class="border rounded-full py-2 px-5 max-w-36 text-base font-semibold bg-white"> <i class="fa-solid fa-arrow-right"></i> About Us</h4>
                         <h1 class="lg:text-4xl text-5xl font-black">We design thoughtful,
                             <br>
@@ -249,14 +249,14 @@
                     </div>
                                         <!-- Image Content -->
                     <figure class="px-5 w-[100%]">
-                        <img
+                        <img class="md:object-cover sm:object-cover"
                           src="assets/Rectangle.png"
                           alt="Album" />
                       </figure>
                   </div>
 
                   <!-- How we works Section -->
-                  <section class="space-y-7">
+                  <section class="space-y-7 py-10">
                     <div class="flex flex-col text-center space-y-5 items-center">
                         <h4 class="border rounded-full py-2 px-5 max-w-44 text-base font-semibold items-center bg-white mt-20"> <i class="fa-solid fa-arrow-right"></i> How we works</h4>
                         <h1 class="lg:text-4xl text-5xl font-black">Our Works Process</h1>
@@ -287,18 +287,101 @@
                       </div>
                     </div>
                   </section>
-
+                  <!-- Our Latest Portfolio Section  -->
                   <section>
-                    
+                     
                   </section>
+
+                  <!-- Let's Discuss Section -->
         
             </main>
+            
 
+    </main>
+    <main>
+      <!-- Let's Discuss Section -->
+      <section class="bg-[url('../assets/bg.jpg')] bg-cover bg-center my-1">
+        <div class="flex flex-col text-center space-y-5 items-center ">
+          <h4 class="btn rounded-s-full rounded-e-full btn-md bg-[#c6fd8862] text-lg border-none mt-20"> <i class="fa-solid fa-arrow-right"></i> Let's Connect</h4>
+          <h1 class="lg:text-4xl text-5xl font-black">Let's Discuss Next Project</h1>
+              <p class="lg:text-lg font-medium max-w-2xl">Let's explore the next big idea together. We're ready to dive into your vision and bring it to life, ensuring every detail aligns with your goals.</p>
+      </div>
+        <!-- Form Section -->
+        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 backdrop-blur-sm px-10 pb-10 max-w-screen-lg mx-auto">
+          <!-- Name section -->
+          <div class="sm:col-span-3">
+            <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900 ml-4">First name</label>
+            <div class="mt-2">
+              <input type="text" name="first-name" id="first-name" autocomplete="given-name" placeholder="Type your given name" class="block w-full  border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 placeholder:p-4 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 rounded-full">
+            </div>
+          </div>
+  
+          <div class="sm:col-span-3">
+            <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900 ml-4">Last name</label>
+            <div class="mt-2">
+              <input type="text" name="last-name" placeholder="Type your surname" id="last-name" autocomplete="family-name" class="block w-full  border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 placeholder:p-4 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 rounded-full">
+            </div>
+          </div>
 
+          <!-- Phone and Email -->
+          <div class="sm:col-span-3">
+            <label for="Phone" class="block text-sm font-medium leading-6 text-gray-900 pl-4">Phone number</label>
+            <div class="mt-2">
+              <input type="tel" id="phone" name="phone" placeholder="Contact number" autocomplete="tel-country-code tel-extension" class="block w-full rounded-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 placeholder:p-4 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+          
+  
+          <div class="sm:col-span-3">
+            <label for="email" class="block text-sm font-medium leading-6 text-gray-900 pl-4">Email address</label>
+            <div class="mt-2">
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="Share your email" class="block w-full rounded-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 placeholder:p-4">
+            </div>
+          </div>
+
+          <div class="sm:col-span-6">
+            <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900 ml-4">Message us</label>
+            <div class="mt-2">
+              <textarea id="about" placeholder="Describe your needs or concerns..." name="about" rows="3" class="block w-full rounded-3xl border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 placeholder:px-4 p-"></textarea>
+            </div>
+          </div>
+          <a class="btn rounded-full btn-md bg-[#ABEF5F] text-xl font-bold border-none sm:col-span-6">
+                      Send Mail
+                      <span class="black-circle">
+                          <i class="fa-sharp fa-solid fa-arrow-right rotated-arrow"></i>
+                      </span>
+                  </a>
+
+      </section>
     </main>
     
     <!-- Footer Section -->
-    <footer class="max-w-full">
+    <footer class="footer footer-center bg-base-200 text-base-content rounded p-10 bg-neutral-900 text-white py-10">
+      <div>
+        <a class="btn btn-ghost text-xl font-extrabold"> <span class="lime-circle ">
+          <i class="fa-solid fa-arrow-right rotated-arrow text-black"></i>
+        </span> Rinterio</a>
+      </div>
+      <p class="max-w-2xl text-gray-300 font-light">The barn house enchants with rustic charm and modern sophistication, featuring weathered wood, sleek metal, and expansive windows that invite natural light.</p>
+      <nav class="grid grid-flow-col gap-20 font-normal text-neutral-300">
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">Services</a>
+        <a class="link link-hover">Portfolio</a>
+        <a class="link link-hover">Blogs</a>
+        <a class="link link-hover">Contact Us</a>
+      </nav>
+
+      <!-- Book Consult -->
+      <a class="btn rounded-s-full rounded-e-full btn-md bg-[#ABEF5F] text-xl w-auto flex">
+        Book Consult
+        <span class="black-circle">
+            <i class="fa-sharp fa-solid fa-arrow-right rotated-arrow"></i>
+        </span>
+    </a>
+
+      <aside>
+        <p>Copyright © 2024 - All right reserved by Rinterio Ltd.</p>
+      </aside>
 
     </footer>
 
